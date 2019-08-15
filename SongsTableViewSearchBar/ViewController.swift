@@ -30,7 +30,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
   
- 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let segueIdentifier = segue.identifier else { fatalError("No identifier in segue") }
+        switch segueIdentifier {
+        case "toDesign":
+            guard let music = segue.destination as? DetailedViewController else {
+                fatalError("Unexpected segue VC")
+            }
+            guard let selectedIndexPath = cellForLove.indexPathForSelectedRow else {
+                fatalError("No row was selected")
+            }
+            switch selectedIndexPath.section{
+            case 0:
+               music.loveSong = love[selectedIndexPath.row]
+            default:
+                ""
+            }
+        default:
+            fatalError("Unexpected segue identifier")
+        }
+    }
+       
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

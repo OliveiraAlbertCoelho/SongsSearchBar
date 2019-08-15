@@ -52,7 +52,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="RcL-5x-5c6" kind="show" id="lC0-sY-gf5"/>
+                                            <segue destination="RcL-5x-5c6" kind="show" identifier="toDesign" id="lC0-sY-gf5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -79,18 +79,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SkO-bF-ol2">
-                                <rect key="frame" x="87" y="44" width="240" height="128"/>
+                                <rect key="frame" x="87" y="130" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3Z-el-s9K">
-                                <rect key="frame" x="20" y="286" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-rF-fZ3">
+                                <rect key="frame" x="116" y="266" width="112" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-rF-fZ3">
-                                <rect key="frame" x="276" y="281" width="42" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3Z-el-s9K">
+                                <rect key="frame" x="116" y="300" width="112" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -101,7 +101,7 @@
                         <viewLayoutGuide key="safeArea" id="bom-TY-4kH"/>
                     </view>
                     <connections>
-                        <outlet property="artistName" destination="UAK-rF-fZ3" id="bwV-dk-g5z"/>
+                        <outlet property="artistName" destination="q3Z-el-s9K" id="txX-JT-wwa"/>
                         <outlet property="songImage" destination="SkO-bF-ol2" id="jou-j1-ZMS"/>
                         <outlet property="songName" destination="UAK-rF-fZ3" id="GFX-Af-kuF"/>
                     </connections>
